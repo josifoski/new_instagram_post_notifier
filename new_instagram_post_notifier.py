@@ -49,6 +49,7 @@ def sendemailnotify(lvsmtpServer, lvport, lvemail_address_from, lvpassword, lvem
         smtpObj.login(lvemail_address_from, lvpassword)
     except Exception as esc:
         print(str(esc))
+        logging.debug(str(esc))
 
     FROM = lvemail_address_from
     TO =  lvemail_address_to
