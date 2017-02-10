@@ -14,9 +14,9 @@ import logging
 
 user = ''
 
-logging.basicConfig(filename='instagram.log', filemode='a', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
 dir_in = '/data/Scrape/instagram_facebook/' # Change dir_in where script will be
+
+logging.basicConfig(filename=dir_in + 'instagram.log', filemode='a', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 url="https://instagram.com/" + user.strip()
 
