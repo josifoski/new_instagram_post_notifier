@@ -1,5 +1,5 @@
 #! /usr/bin/env python3.5
-# by Aleksandar Josifoski josifoski@gmail.com
+# by Aleksandar Josifoski https://about.me/josifsk
 # Script for checking new instagram posts for instagram.com/user, sending notify email
 # 2017 February 10
 
@@ -12,12 +12,11 @@ import codecs
 import html
 import logging
 
-user = 'josifoski'
+user = ''
 
 logging.basicConfig(filename='instagram.log', filemode='a', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-#dir_in = '/home/josifoski/' # for pythonanywhere
-dir_in = '/data/Scrape/instagram_facebook/' # for home. Change dir_in where script will be
+dir_in = '/data/Scrape/instagram_facebook/' # for Change dir_in where script will be
 
 url="https://instagram.com/" + user.strip()
 
